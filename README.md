@@ -1,2 +1,2 @@
 # MKS-SERVO42C-USART-Interface
-Simple control interface for the MKS-SERVO42C stepper control board.
+Simple control interface via USART for the MKS-SERVO42C stepper control board. I am using Boost to write to a serial port that the stepper is connected to. I used the MKS-SERVO42C control software from https://github.com/makerbase-mks/MKS-SERVO42C to write a list of commands. The UART address is currently hardcoded to write to one stepper at a time but I plan to add support for multiple steppers on the same bus down the line. An error handler is passed in during construction.
